@@ -36,6 +36,25 @@ The expense_diary is a backend API designed to help users manage and track their
    # Apply migrations
    py manage.py migrate
 
+## How to Use API
+
+To interact with the Expense Diary API, follow these steps:
+
+1. **Postman Collection:**
+   - Import the provided Postman collection for easy API testing.
+  
+
+2. **API Endpoints:**
+   - Refer to the API documentation for details on available endpoints and their usage.
+  
+
+3. **Authentication:**
+   - Ensure proper authentication by including the required JWT token in the request headers.
+
+4. **Explore and Test:**
+   - Use the Postman collection to explore and test different API endpoints.
+   
+Feel free to customize the instructions based on your specific project structure and documentation location. Make sure to provide accurate paths or URLs for the Postman collection and API documentation.
    
 ### Components
 
