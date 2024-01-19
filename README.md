@@ -160,3 +160,71 @@ The Expense Tracker System is a backend API designed to help users manage and tr
 
 - **Email Template:**
   - `weekly_summary_email.txt`
+
+## URLs
+
+### 1. `user-register`
+
+- **Endpoint:**
+  - `/user-register/`
+
+- **View:**
+  - `RegistrationView`
+
+- **Description:**
+  - Allows users to register.
+
+### 2. `user-login`
+
+- **Endpoint:**
+  - `/user-login/`
+
+- **View:**
+  - `UserLoginView`
+
+- **Description:**
+  - Allows users to log in and obtain JWT tokens.
+
+### 3. `expense-create`
+
+- **Endpoint:**
+  - `/expenses-create/`
+
+- **View:**
+  - `ExpenseCreate`
+
+- **Description:**
+  - Creates an expense and sends a notification email.
+
+### 4. `user-expenses`
+
+- **Endpoint:**
+  - `/user-expenses/`
+
+- **View:**
+  - `UserExpenseView`
+
+- **Description:**
+  - Retrieves expenses specific to the authenticated user.
+
+### 5. `balances`
+
+- **Endpoint:**
+  - `/balances/`
+
+- **View:**
+  - `BalanceView`
+
+- **Description:**
+  - Retrieves balance information for all users.
+
+### 6. `balances-by-user`
+
+- **Endpoint:**
+  - `/balances-by-user/`
+
+- **View:**
+  - `BalanceDetailView`
+
+- **Description:**
+  - Retrieves detailed balance information for the authenticated user.
