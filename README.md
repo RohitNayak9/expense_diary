@@ -42,6 +42,19 @@ The expense_diary is a backend API designed to help users manage and track their
 - **Backend API:** Django backend providing RESTful APIs.
 - **Database:** Sqllite3 database to store user and expense data.
 - **Background Worker:** Celery for asynchronous tasks (e.g., sending email notifications).
+## Schema Diagram
+   ```bash
+      +-----------------+      +---------------------+      +---------------+
+  |      User       |      |       Expense       |      |    Passbook   |
+  +-----------------+      +---------------------+      +---------------+
+  | - id            |      | - id                |      | - id          |
+  | - email         |      | - expense_name      |      | - expense_id  |
+  | - username      |      | - payer_id (FK)     |      | - creditor_id |
+  | - ...           |      | - amount            |      | - debtor_id   |
+  |                 |      | - expense_type      |      | - amount      |
+  |                 |      | - created_at        |      | - created_at  |
+  |                 |      | - participants (M2M)|      +---------------+
+  +-----------------+      +---------------------+
 
 ## Class Structure
 
