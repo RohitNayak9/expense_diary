@@ -26,8 +26,10 @@ The Expense Tracker System is a backend API designed to help users manage and tr
    source venv_name/bin/activate
 
 2. Install project dependencies using the requirement file:
+   ```bash
    pip install -r requirements.txt
 3. Apply database migrations:
+   ```bash
    # Run makemigrations
    py manage.py makemigrations
 
