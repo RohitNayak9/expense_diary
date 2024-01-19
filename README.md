@@ -3,7 +3,38 @@
 ## Overview
 
 The Expense Tracker System is a backend API designed to help users manage and track their expenses. Users can create, view, and analyze their expenses through API interactions.
+## Project Setup
 
+### Prerequisites
+- Python 3.6 or higher
+- Pip (Python package installer)
+
+### How to Set Up the Project:
+
+1. Create and activate a virtual environment using the following commands:
+
+   ```bash
+   # On Windows
+   py -m venv venv_name
+   # On Linux/Mac
+   python3 -m venv venv_name
+
+   # Activate the virtual environment
+   # On Windows
+   .\venv_name\Scripts\activate
+   # On Linux/Mac
+   source venv_name/bin/activate
+
+2. Install project dependencies using the requirement file:
+   pip install -r requirements.txt
+3. Apply database migrations:
+   # Run makemigrations
+   py manage.py makemigrations
+
+   # Apply migrations
+   py manage.py migrate
+
+   
 ### Components
 
 - **Backend API:** Django backend providing RESTful APIs.
