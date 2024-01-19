@@ -2,7 +2,7 @@
 
 ## Overview
 
-The expense_diary is a backend API designed to help users manage and track their expenses. Users can create, and split expenses between to thier friends, and analyze their expenses through API interactions.
+The expense_diary is a backend API designed to help users manage and track their expenses. Users can create, split expenses with their friends, and analyze their spending through API interactions.
 ## Project Setup
 
 ### Prerequisites
