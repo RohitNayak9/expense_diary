@@ -43,8 +43,8 @@ The expense_diary is a backend API designed to help users manage and track their
 - **Database:** Sqllite3 database to store user and expense data.
 - **Background Worker:** Celery for asynchronous tasks (e.g., sending email notifications).
 ## Schema Diagram
-   ```bash
-      +-----------------+      +---------------------+      +---------------+
+     ```bash
+       +-----------------+      +---------------------+      +---------------+
   |      User       |      |       Expense       |      |    Passbook   |
   +-----------------+      +---------------------+      +---------------+
   | - id            |      | - id                |      | - id          |
@@ -55,6 +55,7 @@ The expense_diary is a backend API designed to help users manage and track their
   |                 |      | - created_at        |      | - created_at  |
   |                 |      | - participants (M2M)|      +---------------+
   +-----------------+      +---------------------+
+
 
 ## Class Structure
 
